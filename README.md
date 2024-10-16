@@ -57,3 +57,5 @@ kubectl apply -f deployment.yaml
 ```shell
 kubectl get pod
 ```
+![img_8.png](img_8.png)
+ошибку исправить не получается. К сожалению, поздно сел за ДЗ и не успеваю спросить решения в чате.
