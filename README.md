@@ -9,10 +9,6 @@ cd oncall
 ```shell
 eval $(minikube docker-env)
 ```
-Используется windows, поэтому выполним
-```shell
-minikube -p minikube docker-env | Invoke-Expression
-```
 ```shell
 docker build -t oncall:latest
 ```
@@ -57,5 +53,12 @@ kubectl apply -f deployment.yaml
 ```shell
 kubectl get pod
 ```
-![img_8.png](img_8.png)
-ошибку исправить не получается. К сожалению, поздно сел за ДЗ и не успеваю спросить решения в чате.
+![img_9.png](img_9.png)
+```shell
+kubectl get ingress
+```
+![img_11.png](img_11.png)
+```shell
+curl http://oncall.local
+```
+![img_12.png](img_12.png)
